@@ -18,11 +18,14 @@ export default function RootLayout({
         <nav className="nav">
           <Link href="/" className="brand">AndyAI Visual Factory</Link>
           <div className="navlinks">
+            <Link href="/factory">Factory</Link>
             <Link href="/dashboard">Dashboard</Link>
             <Link href="/workspaces">Workspaces</Link>
             <Link href="/jobs">Jobs</Link>
             <Link href="/assets">Assets</Link>
+            <Link href="/outputs">Outputs</Link>
             <Link href="/showcase">Showcase</Link>
+            <Link href="/history">History</Link>
             <Link href="/operator">Operator</Link>
           </div>
         </nav>

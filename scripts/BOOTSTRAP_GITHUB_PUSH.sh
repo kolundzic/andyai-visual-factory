@@ -5,9 +5,9 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-FINAL_TAG="v6.0.0"
-COMMIT_MSG="MASTER-UDARAC v5.1.0 to v6.0.0 - Visual Factory Operator Console MVP"
-TAGS=("v5.1.0" "v5.2.0" "v5.3.0" "v5.4.0" "v5.5.0" "v5.6.0" "v5.7.0" "v5.8.0" "v5.9.0" "v6.0.0")
+FINAL_TAG="v7.0.0"
+COMMIT_MSG="HUMAN CONTROL UI MASTER-UDARAC v6.1.0 to v7.0.0 - Visual Factory Human Control Cockpit MVP"
+TAGS=("v6.1.0" "v6.2.0" "v6.3.0" "v6.4.0" "v6.5.0" "v6.6.0" "v6.7.0" "v6.8.0" "v6.9.0" "v7.0.0")
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
 cd "${REPO_DIR}"
@@ -29,7 +29,7 @@ for tag in "${TAGS[@]}"; do
   if git rev-parse "${tag}" >/dev/null 2>&1; then
     echo "🟡 Tag exists: ${tag}"
   else
-    git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Operator Console Milestone"
+    git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Human Control UI Milestone"
   fi
 done
 
