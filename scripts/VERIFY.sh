@@ -4,20 +4,9 @@ set -euo pipefail
 echo "🔵 AndyAI Visual Factory — VERIFY"
 
 required_files=(
-  "docs/ux/POST_v6_0_0_UX_DIAGNOSIS.md"
-  "docs/ux/HUMAN_CONTROL_UI_SPEC_v7.md"
-  "docs/ux/FACTORY_COCKPIT_WIREFRAME.md"
-  "docs/runtime/release/RELEASE_NOTES_v6_1_TO_v7_0.md"
-  "components/factory/factory-request-panel.tsx"
-  "components/factory/active-job-timeline.tsx"
-  "components/factory/output-gallery.tsx"
-  "components/factory/export-panel.tsx"
-  "components/factory/recent-work.tsx"
-  "app/factory/page.tsx"
-  "app/outputs/page.tsx"
-  "app/history/page.tsx"
-  "app/api/factory/request/route.ts"
-  "docs/vercel/POST_v7_REDEPLOY_GUIDE.md"
+  "lib/supabase/live-ops.ts"
+  "app/api/factory/debug/route.ts"
+  "docs/runtime/release/RELEASE_NOTES_v7_0_1.md"
 )
 
 missing=0
