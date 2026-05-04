@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generation Job",
+  "type": "object",
+  "required": ["job_id", "output_type", "prompt", "status"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "output_type": { "type": "string" },
+    "prompt": { "type": "string" },
+    "reference_assets": { "type": "array", "items": { "type": "string" } },
+    "status": {
+      "type": "string",
+      "enum": ["planned", "generated", "selected", "regenerated", "exported", "archived"]
+    }
+  }
+}

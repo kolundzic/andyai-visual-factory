@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Variation Selection",
+  "type": "object",
+  "required": ["grid_id", "selected_variant", "selection_reason"],
+  "properties": {
+    "grid_id": { "type": "string" },
+    "selected_variant": { "type": "integer", "minimum": 1 },
+    "selection_reason": { "type": "string" },
+    "rejected_variants": { "type": "array", "items": { "type": "integer" } },
+    "notes": { "type": "string" }
+  }
+}

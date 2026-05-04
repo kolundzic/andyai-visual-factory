@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Export Pack",
+  "type": "object",
+  "required": ["asset_id", "formats", "targets"],
+  "properties": {
+    "asset_id": { "type": "string" },
+    "formats": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["png", "jpg", "webp", "pdf", "svg"] }
+    },
+    "targets": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  }
+}

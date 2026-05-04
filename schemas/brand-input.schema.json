@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand Input",
+  "type": "object",
+  "required": ["brand_name", "project_name", "visual_style", "output_goal"],
+  "properties": {
+    "brand_name": { "type": "string" },
+    "project_name": { "type": "string" },
+    "website": { "type": "string" },
+    "logo_path": { "type": "string" },
+    "primary_colors": { "type": "array", "items": { "type": "string" } },
+    "typography": { "type": "string" },
+    "visual_style": { "type": "string" },
+    "audience": { "type": "array", "items": { "type": "string" } },
+    "output_goal": { "type": "string" }
+  }
+}
