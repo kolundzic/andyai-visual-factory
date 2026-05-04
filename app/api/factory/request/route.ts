@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createProductionRequest } from "@/lib/supabase/live-ops";
+import { createVisualJobFromRequest, recordRuntimeEvent } from "@/lib/supabase/pipeline";
 
 export const dynamic = "force-dynamic";
 
@@ -33,7 +34,26 @@ export async function POST(request: Request) {
       requester
     });
 
-    return NextResponse.json({ ok: true, request: created });
+    await recordRuntimeEvent({
+      eventType: "production_request_created",
+      sourceTable: "production_requests",
+      sourceKey: created.request_key,
+      message: `Production request created for ${outputType}`
+    });
+
+    const visualJob = await createVisualJobFromRequest({
+      productionRequestId: created.id,
+      workspaceId: created.workspace_id,
+      requestKey: created.request_key,
+      outputType,
+      goal
+    });
+
+    return NextResponse.json({
+      ok: true,
+      request: created,
+      visualJob
+    });
   } catch (error) {
     return NextResponse.json(
       { ok: false, error: error instanceof Error ? error.message : "Unknown error" },
