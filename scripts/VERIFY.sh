@@ -5,42 +5,26 @@ echo "🔵 AndyAI Visual Factory — VERIFY"
 
 required_files=(
   "package.json"
-  "next.config.mjs"
-  "tsconfig.json"
-  "app/layout.tsx"
-  "app/page.tsx"
-  "app/globals.css"
-  "app/dashboard/page.tsx"
-  "app/workspaces/page.tsx"
-  "app/jobs/page.tsx"
-  "app/assets/page.tsx"
-  "app/showcase/page.tsx"
-  "app/api/health/route.ts"
-  "components/visual-factory-hero.tsx"
-  "components/runtime-flow.tsx"
-  "components/workspace-card.tsx"
-  "components/job-card.tsx"
-  "components/asset-card.tsx"
-  "components/status-badge.tsx"
-  "lib/sample-data.ts"
-  "lib/types.ts"
-  "lib/runtime-map.ts"
-  "docs/vercel/VERCEL_DEPLOYMENT.md"
-  "docs/cloud/CLOUD_MVP_PLAN_v2_1_TO_v3_0.md"
-  "docs/supabase/SUPABASE_SCHEMA_PREP.md"
-  "docs/runtime/roadmap/VERCEL_ROADMAP_v2_1_TO_v3_0.md"
-  "docs/runtime/release/RELEASE_NOTES_v2_1_TO_v3_0.md"
+  ".env.example"
+  "app/api/supabase-health/route.ts"
+  "lib/supabase/env.ts"
+  "lib/supabase/client.ts"
+  "lib/supabase/server.ts"
+  "docs/supabase/migrations/001_visual_factory_runtime.sql"
+  "docs/supabase/seeds/001_visual_factory_demo_seed.sql"
+  "docs/supabase/setup/SUPABASE_SETUP_GUIDE.md"
+  "docs/supabase/runtime/RUNTIME_TABLE_MAP.md"
+  "docs/supabase/runtime/FRONTEND_TO_SUPABASE_MAP.md"
+  "docs/supabase/runtime/RLS_POLICY_NOTES.md"
+  "docs/vercel/VERCEL_SUPABASE_ENV_WIRING.md"
+  "docs/runtime/release/RELEASE_NOTES_v3_1_TO_v4_0.md"
+  "scripts/COPY_SUPABASE_SQL_TO_CLIPBOARD.sh"
+  "scripts/COPY_SUPABASE_SEED_TO_CLIPBOARD.sh"
 )
 
 missing=0
-
 for file in "${required_files[@]}"; do
-  if [ -f "$file" ]; then
-    echo "🟢 OK: $file"
-  else
-    echo "🔴 MISSING: $file"
-    missing=1
-  fi
+  if [ -f "$file" ]; then echo "🟢 OK: $file"; else echo "🔴 MISSING: $file"; missing=1; fi
 done
 
 if command -v python3 >/dev/null 2>&1; then
@@ -55,9 +39,5 @@ for path in list(Path(".").glob("*.json")) + list(Path("schemas").rglob("*.json"
 PY
 fi
 
-if [ "$missing" -ne 0 ]; then
-  echo "🔴 VERIFY failed."
-  exit 1
-fi
-
+[ "$missing" -eq 0 ] || { echo "🔴 VERIFY failed."; exit 1; }
 echo "🟢 VERIFY passed."

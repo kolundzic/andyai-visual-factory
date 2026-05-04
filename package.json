@@ -7,13 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "verify": "bash scripts/VERIFY.sh"
+    "verify": "bash scripts/VERIFY.sh",
+    "copy:supabase-sql": "bash scripts/COPY_SUPABASE_SQL_TO_CLIPBOARD.sh",
+    "copy:supabase-seed": "bash scripts/COPY_SUPABASE_SEED_TO_CLIPBOARD.sh"
   },
   "dependencies": {
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "lucide-react": "^0.468.0"
+    "lucide-react": "^0.468.0",
+    "@supabase/supabase-js": "^2.48.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
