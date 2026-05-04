@@ -5,18 +5,20 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-FINAL_TAG="v2.0.0"
-COMMIT_MSG="MASTER-UDARAC v1.3.0 to v2.0.0 - Visual Factory Runtime Engine"
+FINAL_TAG="v3.0.0"
+COMMIT_MSG="VERCEL MASTER-UDARAC v2.1.0 to v3.0.0 - Visual Factory Cloud MVP"
 
 TAGS=(
-  "v1.3.0"
-  "v1.4.0"
-  "v1.5.0"
-  "v1.6.0"
-  "v1.7.0"
-  "v1.8.0"
-  "v1.9.0"
-  "v2.0.0"
+  "v2.1.0"
+  "v2.2.0"
+  "v2.3.0"
+  "v2.4.0"
+  "v2.5.0"
+  "v2.6.0"
+  "v2.7.0"
+  "v2.8.0"
+  "v2.9.0"
+  "v3.0.0"
 )
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
@@ -48,7 +50,7 @@ for tag in "${TAGS[@]}"; do
   if git rev-parse "${tag}" >/dev/null 2>&1; then
     echo "🟡 Tag already exists locally: ${tag}"
   else
-    git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Runtime Milestone"
+    git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Vercel Milestone"
   fi
 done
 
@@ -69,21 +71,17 @@ else
   git remote add origin "${REMOTE_URL}"
 fi
 
+# Keep under GitHub's 20 topic limit.
 gh repo edit "${REPO}" \
   --add-topic andyai \
   --add-topic visual-factory \
+  --add-topic vercel \
+  --add-topic nextjs \
+  --add-topic supabase-ready \
   --add-topic visual-runtime \
-  --add-topic prompt-compiler \
-  --add-topic asset-registry \
-  --add-topic visual-memory \
-  --add-topic provider-runtime \
-  --add-topic saas-ready \
   --add-topic design-automation \
-  --add-topic brand-system \
-  --add-topic image-generation \
-  --add-topic marketing-assets \
-  --add-topic agentic-workflows \
-  --add-topic visual-canon \
+  --add-topic asset-registry \
+  --add-topic prompt-compiler \
   --add-topic human-in-the-loop || true
 
 git push -u origin main
