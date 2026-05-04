@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provider Capabilities",
+  "type": "object",
+  "required": ["provider_name"],
+  "properties": {
+    "provider_name": { "type": "string" },
+    "supports_text_to_image": { "type": "boolean" },
+    "supports_image_editing": { "type": "boolean" },
+    "supports_image_to_video": { "type": "boolean" },
+    "supports_batch": { "type": "boolean" }
+  }
+}

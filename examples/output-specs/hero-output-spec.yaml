@@ -1,0 +1,10 @@
+output_type: hero_visual
+aspect_ratio: 16:9
+target_use:
+  - landing_page
+  - README
+  - presentation
+must_include:
+  - strong headline area
+  - workflow visual metaphor
+  - brand consistency

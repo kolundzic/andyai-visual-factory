@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Selection Evidence",
+  "type": "object",
+  "required": ["grid_id", "winner"],
+  "properties": {
+    "grid_id": { "type": "string" },
+    "winner": { "type": "integer" },
+    "comparison_notes": { "type": "string" },
+    "rejected_variants": { "type": "array", "items": { "type": "integer" } }
+  }
+}

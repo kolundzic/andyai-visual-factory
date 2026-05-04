@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Typography",
+  "type": "object",
+  "required": ["headline", "body"],
+  "properties": {
+    "headline": { "type": "string" },
+    "body": { "type": "string" },
+    "supporting": { "type": "string" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Palette",
+  "type": "object",
+  "required": ["primary_colors"],
+  "properties": {
+    "primary_colors": { "type": "array", "items": { "type": "string" } },
+    "secondary_colors": { "type": "array", "items": { "type": "string" } },
+    "accent_colors": { "type": "array", "items": { "type": "string" } }
+  }
+}

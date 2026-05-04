@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visual Memory",
+  "type": "object",
+  "required": ["asset_id", "prompt", "selected_variant"],
+  "properties": {
+    "asset_id": { "type": "string" },
+    "prompt": { "type": "string" },
+    "selected_variant": { "type": "integer" },
+    "selection_reason": { "type": "string" },
+    "final_notes": { "type": "string" }
+  }
+}

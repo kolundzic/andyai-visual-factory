@@ -1,0 +1,17 @@
+brand_name: AndyAI
+project_name: AndyAI Visual Factory
+website: https://visualfactory.andyai.ai
+primary_colors:
+  - black
+  - white
+  - red
+  - gold
+visual_style:
+  - clean
+  - modern
+  - AI factory
+audience:
+  - founders
+  - creators
+  - marketers
+output_goal: brand-aware production visuals
