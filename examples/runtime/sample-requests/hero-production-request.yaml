@@ -1,0 +1,12 @@
+request_id: req_hero_001
+requester: Andy
+project: AndyAI Visual Factory
+brand_pack_id: andyai_default
+output_type: hero_visual
+goal: create a premium landing page hero visual for the Visual Factory homepage
+target_platforms:
+  - website
+  - README
+  - LinkedIn
+quality_level: high
+human_review_required: true

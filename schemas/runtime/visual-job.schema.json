@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visual Job",
+  "type": "object",
+  "required": ["job_id", "request_id", "project", "output_type", "status"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "request_id": { "type": "string" },
+    "project": { "type": "string" },
+    "brand_pack_id": { "type": "string" },
+    "output_type": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "planned",
+        "queued",
+        "generating",
+        "review_required",
+        "selected",
+        "regenerating",
+        "exporting",
+        "completed",
+        "archived",
+        "failed"
+      ]
+    },
+    "selected_variant": { "type": ["integer", "null"] },
+    "export_targets": { "type": "array", "items": { "type": "string" } }
+  }
+}

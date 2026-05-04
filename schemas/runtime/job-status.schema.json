@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Job Status",
+  "type": "object",
+  "required": ["job_id", "status", "updated_at"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "planned",
+        "queued",
+        "generating",
+        "review_required",
+        "selected",
+        "regenerating",
+        "exporting",
+        "completed",
+        "archived",
+        "failed"
+      ]
+    },
+    "updated_at": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

@@ -31,6 +31,23 @@ Brand Input
 
 ---
 
+## Runtime Direction
+
+```text
+Visual Factory v1.0 = canonical visual system
+Visual Factory v2.0 = SaaS-ready visual production runtime
+```
+
+The v1.1.0 release introduces the first runtime object:
+
+```text
+Visual Job
+```
+
+A visual job turns a human request into a trackable production unit.
+
+---
+
 ## Relationship to AndyAI Visual Canon
 
 AndyAI Visual Factory is the production layer built on top of the AndyAI Visual Canon.
@@ -56,27 +73,32 @@ Factory evolves.
 
 ---
 
-## Version Ladder
+## Runtime Version Ladder
 
 ```text
-v0.1.0 — Visual Factory Foundation Scaffold
-v0.2.0 — Brand Input Pack + Visual Canon Bridge
-v0.3.0 — Prompt Library Foundation
-v0.4.0 — Variation Grid Protocol
-v0.5.0 — Export Pack Standard
-v0.6.0 — Visual Memory + Selection Evidence
-v0.7.0 — Provider Adapter Layer
-v0.8.0 — UI Mockup to Web Component Pipeline
-v0.9.0 — Public Showcase + Landing Page Content Pack
-v1.0.0 — Canonical Visual Factory Release
+v1.1.0 — Visual Job Model + Production Request Schema
+v1.2.0 — Brand Pack Runtime + Project Workspace Model
+v1.3.0 — Prompt Compiler + Visual Brief Generator
+v1.4.0 — Variation Grid Runtime + Human Selection Ledger
+v1.5.0 — Asset Registry + Export Pack Builder
+v1.6.0 — Visual Memory Runtime + Winning Style Database
+v1.7.0 — Provider Adapter Runtime + Cost/Risk Controls
+v1.8.0 — Showcase Gallery + Case Study Builder
+v1.9.0 — SaaS Product Layer + User/Team Workflow
+v2.0.0 — Visual Factory Runtime Engine
 ```
 
 ---
 
-## Master Line
+## Master Lines
 
 ```text
 Build visuals like a system, not like a lottery.
+From visual canon to visual runtime.
+From prompt to production.
+From image to asset.
+From taste to memory.
+From repo to SaaS.
 ```
 
 ---
@@ -84,8 +106,8 @@ Build visuals like a system, not like a lottery.
 ## Status
 
 ```text
-Release: v0.2.0
-Status: Brand Input Pack + Visual Canon Bridge
+Release: v1.1.0
+Status: Visual Job Model + Production Request Schema
 Subdomain: https://visualfactory.andyai.ai
 Upstream Canon: andyai-visual-canon
 ```

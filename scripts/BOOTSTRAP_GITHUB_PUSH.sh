@@ -5,8 +5,8 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-RELEASE_TAG="v0.2.0"
-COMMIT_MSG="v0.2.0 - Brand Input Pack + Visual Canon Bridge (MASTER-UDARAC)"
+RELEASE_TAG="v1.1.0"
+COMMIT_MSG="v1.1.0 - Visual Job Model + Production Request Schema (MASTER-UDARAC)"
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
 cd "${REPO_DIR}"
@@ -60,6 +60,9 @@ gh repo edit "${REPO}" \
   --add-topic andyai \
   --add-topic visual-factory \
   --add-topic design-automation \
+  --add-topic visual-runtime \
+  --add-topic job-model \
+  --add-topic production-request \
   --add-topic brand-system \
   --add-topic image-generation \
   --add-topic marketing-assets \
@@ -68,7 +71,6 @@ gh repo edit "${REPO}" \
   --add-topic prompt-library \
   --add-topic agentic-workflows \
   --add-topic creative-automation \
-  --add-topic content-design \
   --add-topic visual-canon \
   --add-topic human-in-the-loop || true
 
@@ -77,3 +79,4 @@ git push origin "${RELEASE_TAG}"
 
 echo "🟢 TAP 02 complete."
 echo "🟢 GitHub: https://github.com/${REPO}"
+echo "🟢 Tag: ${RELEASE_TAG}"

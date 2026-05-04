@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Production Request",
+  "type": "object",
+  "required": ["request_id", "requester", "project", "output_type", "goal"],
+  "properties": {
+    "request_id": { "type": "string" },
+    "requester": { "type": "string" },
+    "project": { "type": "string" },
+    "brand_pack_id": { "type": "string" },
+    "output_type": { "type": "string" },
+    "goal": { "type": "string" },
+    "target_platforms": { "type": "array", "items": { "type": "string" } },
+    "quality_level": { "type": "string", "enum": ["draft", "standard", "high", "premium"] },
+    "human_review_required": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Job Event",
+  "type": "object",
+  "required": ["event_id", "job_id", "event_type", "timestamp"],
+  "properties": {
+    "event_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "event_type": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "payload": { "type": "object" }
+  }
+}

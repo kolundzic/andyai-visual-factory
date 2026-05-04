@@ -5,27 +5,21 @@ echo "🔵 AndyAI Visual Factory — VERIFY"
 
 required_files=(
   "README.md"
-  "docs/brand-input/BRAND_BOOK_TEMPLATE.md"
-  "docs/brand-input/BRAND_CONTEXT_TEMPLATE.yaml"
-  "docs/brand-input/VISUAL_CANON_INPUT_MAP.md"
-  "docs/brand-input/LOGO_USAGE_GUIDE.md"
-  "docs/brand-input/BRAND_VALIDATION_CHECKLIST.md"
-  "docs/prompt-library/PROMPT_LIBRARY_FOUNDATION.md"
-  "docs/variation-grid/VARIATION_GRID_PROTOCOL.md"
-  "docs/export-pack/EXPORT_PACK_STANDARD.md"
-  "docs/visual-memory/VISUAL_MEMORY_STANDARD.md"
-  "docs/provider-adapters/PROVIDER_ADAPTER_SPEC.md"
-  "docs/ui-pipeline/UI_MOCKUP_TO_COMPONENT_WORKFLOW.md"
-  "docs/public-showcase/PUBLIC_SHOWCASE_PACK.md"
-  "docs/release/CANONICAL_RELEASE_CHECKLIST.md"
-  "docs/VERSION_LADDER_v0_2_TO_v1_0.md"
-  "schemas/palette.schema.json"
-  "schemas/typography.schema.json"
-  "schemas/visual-memory.schema.json"
-  "schemas/selection-evidence.schema.json"
-  "schemas/provider-capabilities.schema.json"
-  "examples/brand-inputs/andyai-visual-factory-brand-context.yaml"
-  "examples/output-specs/hero-output-spec.yaml"
+  "docs/runtime/RUNTIME_OVERVIEW.md"
+  "docs/runtime/job-model/VISUAL_JOB_MODEL.md"
+  "docs/runtime/production-request/PRODUCTION_REQUEST_SPEC.md"
+  "docs/runtime/job-lifecycle/JOB_LIFECYCLE.md"
+  "docs/runtime/job-lifecycle/JOB_STATUS_TABLE.md"
+  "docs/runtime/queue/JOB_QUEUE_NOTES.md"
+  "docs/runtime/roadmap/RUNTIME_ROADMAP_v1_1_TO_v2_0.md"
+  "docs/runtime/release/RELEASE_NOTES_v1_1_0.md"
+  "docs/RUNTIME_VERSION_LADDER_v1_1_TO_v2_0.md"
+  "schemas/runtime/visual-job.schema.json"
+  "schemas/runtime/production-request.schema.json"
+  "schemas/runtime/job-status.schema.json"
+  "schemas/runtime/job-event.schema.json"
+  "examples/runtime/sample-requests/hero-production-request.yaml"
+  "examples/runtime/sample-jobs/hero-visual-job.yaml"
 )
 
 missing=0
@@ -44,7 +38,7 @@ if command -v python3 >/dev/null 2>&1; then
   python3 - <<'PY'
 import json
 from pathlib import Path
-for path in Path("schemas").glob("*.json"):
+for path in Path("schemas").rglob("*.json"):
     with path.open("r", encoding="utf-8") as f:
         json.load(f)
     print(f"🟢 JSON OK: {path}")
