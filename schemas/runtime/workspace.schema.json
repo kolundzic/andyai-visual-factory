@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workspace",
+  "type": "object",
+  "required": ["workspace_id", "workspace_name", "project", "brand_pack_id", "status"],
+  "properties": {
+    "workspace_id": { "type": "string" },
+    "workspace_name": { "type": "string" },
+    "project": { "type": "string" },
+    "brand_pack_id": { "type": "string" },
+    "owner": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "paused", "archived"]
+    },
+    "created_at": { "type": "string" }
+  }
+}

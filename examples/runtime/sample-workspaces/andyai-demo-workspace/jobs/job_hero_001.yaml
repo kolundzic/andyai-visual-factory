@@ -1,0 +1,12 @@
+job_id: job_hero_001
+request_id: req_hero_001
+workspace_id: ws_andyai_visual_factory_demo
+project: AndyAI Visual Factory
+brand_pack_id: andyai_visual_factory_default
+output_type: hero_visual
+status: planned
+selected_variant: null
+export_targets:
+  - website_hero
+  - readme_visual
+  - social_post

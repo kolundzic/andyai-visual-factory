@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workspace Manifest",
+  "type": "object",
+  "required": ["workspace_id", "brand_pack_id", "folders"],
+  "properties": {
+    "workspace_id": { "type": "string" },
+    "brand_pack_id": { "type": "string" },
+    "folders": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  }
+}

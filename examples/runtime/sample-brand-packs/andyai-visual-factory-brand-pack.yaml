@@ -1,0 +1,17 @@
+brand_pack_id: andyai_visual_factory_default
+brand_name: AndyAI Visual Factory
+website: https://visualfactory.andyai.ai
+primary_colors:
+  - black
+  - white
+  - red
+  - gold
+visual_style:
+  - clean
+  - modern
+  - factory-grade
+audience:
+  - founders
+  - creators
+  - marketers
+  - AI builders

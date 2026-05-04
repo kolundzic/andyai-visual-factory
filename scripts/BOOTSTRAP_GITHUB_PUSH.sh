@@ -5,8 +5,8 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-RELEASE_TAG="v1.1.0"
-COMMIT_MSG="v1.1.0 - Visual Job Model + Production Request Schema (MASTER-UDARAC)"
+RELEASE_TAG="v1.2.0"
+COMMIT_MSG="v1.2.0 - Brand Pack Runtime + Project Workspace Model (MASTER-UDARAC)"
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
 cd "${REPO_DIR}"
@@ -61,16 +61,16 @@ gh repo edit "${REPO}" \
   --add-topic visual-factory \
   --add-topic design-automation \
   --add-topic visual-runtime \
+  --add-topic workspace-runtime \
+  --add-topic brand-pack \
   --add-topic job-model \
   --add-topic production-request \
   --add-topic brand-system \
   --add-topic image-generation \
   --add-topic marketing-assets \
   --add-topic ui-mockups \
-  --add-topic infographics \
   --add-topic prompt-library \
   --add-topic agentic-workflows \
-  --add-topic creative-automation \
   --add-topic visual-canon \
   --add-topic human-in-the-loop || true
 

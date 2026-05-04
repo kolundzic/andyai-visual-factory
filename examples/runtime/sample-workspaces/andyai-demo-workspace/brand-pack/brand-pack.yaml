@@ -1,0 +1,23 @@
+brand_pack_id: andyai_visual_factory_default
+brand_name: AndyAI Visual Factory
+website: https://visualfactory.andyai.ai
+primary_colors:
+  - black
+  - white
+  - red
+  - gold
+typography: clean modern sans
+visual_style:
+  - clean SaaS
+  - modern AI
+  - rounded blocks
+  - subtle shadows
+audience:
+  - founders
+  - AI builders
+  - designers
+  - marketers
+negative_constraints:
+  - avoid clutter
+  - avoid unreadable text
+  - avoid random visual styles

@@ -35,16 +35,18 @@ Brand Input
 
 ```text
 Visual Factory v1.0 = canonical visual system
+Visual Factory v1.1 = visual job model
+Visual Factory v1.2 = workspace runtime model
 Visual Factory v2.0 = SaaS-ready visual production runtime
 ```
 
-The v1.1.0 release introduces the first runtime object:
+The v1.2.0 release introduces the workspace layer:
 
 ```text
-Visual Job
+Brand Pack + Project Workspace
 ```
 
-A visual job turns a human request into a trackable production unit.
+A workspace gives every brand/project its own production room.
 
 ---
 
@@ -94,6 +96,8 @@ v2.0.0 — Visual Factory Runtime Engine
 
 ```text
 Build visuals like a system, not like a lottery.
+A job without a workspace is loose work.
+A job inside a workspace becomes production.
 From visual canon to visual runtime.
 From prompt to production.
 From image to asset.
@@ -106,8 +110,8 @@ From repo to SaaS.
 ## Status
 
 ```text
-Release: v1.1.0
-Status: Visual Job Model + Production Request Schema
+Release: v1.2.0
+Status: Brand Pack Runtime + Project Workspace Model
 Subdomain: https://visualfactory.andyai.ai
 Upstream Canon: andyai-visual-canon
 ```

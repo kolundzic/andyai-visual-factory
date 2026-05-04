@@ -3,8 +3,19 @@
 ## Release name
 Brand Pack Runtime + Project Workspace Model
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Project Workspace Model
+- Workspace Folder Contract
+- Workspace Manifest Specification
+- Brand Pack Runtime
+- Brand Pack Fields
+- Project Context Model
+- Workspace Lifecycle
+- Workspace Quality Checklist
+- Runtime roadmap v1.2.0 → v2.0.0
+- Runtime schemas
+- Sample workspace
+- Sample brand pack
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_1_TO_v2_0.md
+## Outcome
+Each brand/project now has a structured production workspace.

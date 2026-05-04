@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand Pack",
+  "type": "object",
+  "required": ["brand_pack_id", "brand_name", "visual_style", "primary_colors", "audience"],
+  "properties": {
+    "brand_pack_id": { "type": "string" },
+    "brand_name": { "type": "string" },
+    "website": { "type": "string" },
+    "logo_paths": { "type": "array", "items": { "type": "string" } },
+    "primary_colors": { "type": "array", "items": { "type": "string" } },
+    "typography": { "type": "string" },
+    "visual_style": { "type": "array", "items": { "type": "string" } },
+    "audience": { "type": "array", "items": { "type": "string" } },
+    "negative_constraints": { "type": "array", "items": { "type": "string" } }
+  }
+}

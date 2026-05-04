@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Context",
+  "type": "object",
+  "required": ["project", "goal", "audience"],
+  "properties": {
+    "project": { "type": "string" },
+    "product_category": { "type": "string" },
+    "goal": { "type": "string" },
+    "audience": { "type": "array", "items": { "type": "string" } },
+    "target_channels": { "type": "array", "items": { "type": "string" } },
+    "phase": { "type": "string" }
+  }
+}
