@@ -23,6 +23,7 @@ export default function RootLayout({
             <Link href="/jobs">Jobs</Link>
             <Link href="/assets">Assets</Link>
             <Link href="/showcase">Showcase</Link>
+            <Link href="/operator">Operator</Link>
           </div>
         </nav>
         {children}

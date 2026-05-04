@@ -4,23 +4,32 @@ set -euo pipefail
 echo "🔵 AndyAI Visual Factory — VERIFY"
 
 required_files=(
-  "lib/supabase/runtime-queries.ts"
-  "components/empty-state.tsx"
-  "components/live-data-badge.tsx"
-  "app/dashboard/page.tsx"
-  "app/workspaces/page.tsx"
-  "app/jobs/page.tsx"
-  "app/assets/page.tsx"
-  "app/showcase/page.tsx"
-  "docs/supabase/live-data/LIVE_DATA_QUERY_LAYER.md"
-  "docs/supabase/live-data/FRONTEND_LIVE_DATA_MAP.md"
-  "docs/vercel/LIVE_DATA_REDEPLOY_GUIDE.md"
-  "docs/runtime/release/RELEASE_NOTES_v4_1_TO_v5_0.md"
+  "docs/status/POST_v5_0_0_STATUS_REPORT.md"
+  "docs/runtime/ops/OPERATOR_CONSOLE_PLAN_v6.md"
+  "docs/runtime/ops/LIVE_OPS_CHECKLIST.md"
+  "docs/runtime/release/RELEASE_NOTES_v5_1_TO_v6_0.md"
+  "docs/supabase/migrations/002_visual_factory_live_ops.sql"
+  "docs/supabase/live-ops/LIVE_OPS_SQL_GUIDE.md"
+  "docs/vercel/POST_v6_REDEPLOY_GUIDE.md"
+  "docs/status/PUBLIC_PROOF_PACK_v6.md"
+  "lib/supabase/live-ops.ts"
+  "app/api/runtime/summary/route.ts"
+  "app/api/production-requests/route.ts"
+  "components/operator-link-grid.tsx"
+  "app/operator/page.tsx"
+  "app/requests/new/page.tsx"
+  "app/assets/[assetKey]/page.tsx"
+  "scripts/COPY_LIVE_OPS_SQL_TO_CLIPBOARD.sh"
 )
 
 missing=0
 for file in "${required_files[@]}"; do
-  if [ -f "$file" ]; then echo "🟢 OK: $file"; else echo "🔴 MISSING: $file"; missing=1; fi
+  if [ -f "$file" ]; then
+    echo "🟢 OK: $file"
+  else
+    echo "🔴 MISSING: $file"
+    missing=1
+  fi
 done
 
 if command -v python3 >/dev/null 2>&1; then
