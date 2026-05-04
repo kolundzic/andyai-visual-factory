@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Case Study",
+  "type": "object",
+  "required": ["case_study_id", "workspace_id", "problem", "final_assets"],
+  "properties": {
+    "case_study_id": { "type": "string" },
+    "workspace_id": { "type": "string" },
+    "problem": { "type": "string" },
+    "selected_direction": { "type": "string" },
+    "final_assets": { "type": "array", "items": { "type": "string" } },
+    "business_value": { "type": "string" }
+  }
+}

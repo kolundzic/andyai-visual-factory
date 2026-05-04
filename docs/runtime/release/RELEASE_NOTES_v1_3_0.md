@@ -3,8 +3,11 @@
 ## Release name
 Prompt Compiler + Visual Brief Generator
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Prompt Compiler Spec
+- Visual Brief Generator
+- Visual Brief Template
+- prompt compiler schemas
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Human requests can be transformed into structured visual briefs and production-grade prompts.

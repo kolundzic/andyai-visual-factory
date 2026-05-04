@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SaaS Workflow",
+  "type": "object",
+  "required": ["workflow_id", "user_id", "workspace_id", "plan"],
+  "properties": {
+    "workflow_id": { "type": "string" },
+    "user_id": { "type": "string" },
+    "workspace_id": { "type": "string" },
+    "plan": { "type": "string" },
+    "usage_events": { "type": "array", "items": { "type": "string" } }
+  }
+}

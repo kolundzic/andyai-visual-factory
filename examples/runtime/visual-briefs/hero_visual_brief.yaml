@@ -1,0 +1,11 @@
+brief_id: brief_hero_001
+job_id: job_hero_001
+visual_goal: explain the full Visual Factory runtime
+style_direction: clean modern SaaS diagram
+negative_constraints:
+  - avoid clutter
+  - avoid unreadable text
+output_targets:
+  - website
+  - README
+  - LinkedIn

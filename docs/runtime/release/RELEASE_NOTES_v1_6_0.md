@@ -3,8 +3,10 @@
 ## Release name
 Visual Memory Runtime + Winning Style Database
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Visual Memory Runtime
+- Winning Style Database
+- Memory Promotion Rules
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Taste and winning patterns become reusable system memory.

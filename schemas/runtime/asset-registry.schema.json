@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Asset Registry",
+  "type": "object",
+  "required": ["asset_id", "workspace_id", "job_id", "format"],
+  "properties": {
+    "asset_id": { "type": "string" },
+    "workspace_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "format": { "type": "string" },
+    "target_platform": { "type": "string" },
+    "source_prompt_id": { "type": "string" }
+  }
+}

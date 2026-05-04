@@ -5,8 +5,19 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-RELEASE_TAG="v1.2.0"
-COMMIT_MSG="v1.2.0 - Brand Pack Runtime + Project Workspace Model (MASTER-UDARAC)"
+FINAL_TAG="v2.0.0"
+COMMIT_MSG="MASTER-UDARAC v1.3.0 to v2.0.0 - Visual Factory Runtime Engine"
+
+TAGS=(
+  "v1.3.0"
+  "v1.4.0"
+  "v1.5.0"
+  "v1.6.0"
+  "v1.7.0"
+  "v1.8.0"
+  "v1.9.0"
+  "v2.0.0"
+)
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
 cd "${REPO_DIR}"
@@ -33,11 +44,13 @@ else
   git commit -m "${COMMIT_MSG}"
 fi
 
-if git rev-parse "${RELEASE_TAG}" >/dev/null 2>&1; then
-  echo "🟡 Tag already exists locally: ${RELEASE_TAG}"
-else
-  git tag -a "${RELEASE_TAG}" -m "${COMMIT_MSG}"
-fi
+for tag in "${TAGS[@]}"; do
+  if git rev-parse "${tag}" >/dev/null 2>&1; then
+    echo "🟡 Tag already exists locally: ${tag}"
+  else
+    git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Runtime Milestone"
+  fi
+done
 
 if gh repo view "${REPO}" >/dev/null 2>&1; then
   echo "🟡 GitHub repo already exists: ${REPO}"
@@ -59,24 +72,26 @@ fi
 gh repo edit "${REPO}" \
   --add-topic andyai \
   --add-topic visual-factory \
-  --add-topic design-automation \
   --add-topic visual-runtime \
-  --add-topic workspace-runtime \
-  --add-topic brand-pack \
-  --add-topic job-model \
-  --add-topic production-request \
+  --add-topic prompt-compiler \
+  --add-topic asset-registry \
+  --add-topic visual-memory \
+  --add-topic provider-runtime \
+  --add-topic saas-ready \
+  --add-topic design-automation \
   --add-topic brand-system \
   --add-topic image-generation \
   --add-topic marketing-assets \
-  --add-topic ui-mockups \
-  --add-topic prompt-library \
   --add-topic agentic-workflows \
   --add-topic visual-canon \
   --add-topic human-in-the-loop || true
 
 git push -u origin main
-git push origin "${RELEASE_TAG}"
+
+for tag in "${TAGS[@]}"; do
+  git push origin "${tag}"
+done
 
 echo "🟢 TAP 02 complete."
 echo "🟢 GitHub: https://github.com/${REPO}"
-echo "🟢 Tag: ${RELEASE_TAG}"
+echo "🟢 Final tag: ${FINAL_TAG}"

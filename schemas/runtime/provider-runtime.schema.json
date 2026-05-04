@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provider Runtime",
+  "type": "object",
+  "required": ["provider_id", "model", "capabilities"],
+  "properties": {
+    "provider_id": { "type": "string" },
+    "model": { "type": "string" },
+    "capabilities": { "type": "array", "items": { "type": "string" } },
+    "max_cost_per_job": { "type": "number" },
+    "fallback_provider": { "type": "string" }
+  }
+}

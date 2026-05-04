@@ -1,0 +1,10 @@
+workflow_id: workflow_creator_001
+user_id: user_demo_001
+workspace_id: ws_andyai_visual_factory_demo
+plan: Creator
+usage_events:
+  - create_workspace
+  - upload_brand_pack
+  - create_visual_job
+  - select_variant
+  - export_asset

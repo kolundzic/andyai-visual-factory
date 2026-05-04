@@ -3,8 +3,10 @@
 ## Release name
 Showcase Gallery + Case Study Builder
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Showcase Gallery
+- Case Study Builder
+- Before/After Template
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Production outputs become proof, portfolio, and marketing material.

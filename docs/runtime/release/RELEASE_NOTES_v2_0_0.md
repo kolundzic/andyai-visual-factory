@@ -3,8 +3,11 @@
 ## Release name
 Visual Factory Runtime Engine
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Visual Factory Runtime Engine
+- v2 Architecture
+- v2 Release Checklist
+- full runtime layer from prompt compiler to SaaS workflow
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+AndyAI Visual Factory reaches a SaaS-ready runtime architecture.

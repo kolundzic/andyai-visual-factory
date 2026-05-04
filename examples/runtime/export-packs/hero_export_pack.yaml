@@ -1,0 +1,9 @@
+export_pack_id: export_hero_001
+asset_id: asset_hero_001
+targets:
+  - website_hero
+  - readme_visual
+  - linkedin_post
+formats:
+  - webp
+  - png

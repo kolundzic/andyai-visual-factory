@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visual Brief",
+  "type": "object",
+  "required": ["brief_id", "job_id", "visual_goal", "output_targets"],
+  "properties": {
+    "brief_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "visual_goal": { "type": "string" },
+    "style_direction": { "type": "string" },
+    "negative_constraints": { "type": "array", "items": { "type": "string" } },
+    "output_targets": { "type": "array", "items": { "type": "string" } }
+  }
+}

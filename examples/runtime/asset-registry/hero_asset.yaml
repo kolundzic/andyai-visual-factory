@@ -1,0 +1,6 @@
+asset_id: asset_hero_001
+workspace_id: ws_andyai_visual_factory_demo
+job_id: job_hero_001
+format: webp
+target_platform: website
+source_prompt_id: prompt_hero_001

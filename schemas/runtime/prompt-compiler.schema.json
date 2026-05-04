@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Compiler",
+  "type": "object",
+  "required": ["compiler_id", "job_id", "input_request", "compiled_prompt"],
+  "properties": {
+    "compiler_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "input_request": { "type": "string" },
+    "compiled_prompt": { "type": "string" },
+    "negative_constraints": { "type": "array", "items": { "type": "string" } }
+  }
+}

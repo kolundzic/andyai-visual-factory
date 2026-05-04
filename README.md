@@ -1,19 +1,8 @@
 # AndyAI Visual Factory
 
-**Brand-to-Assets Design Engine**
+**Brand-to-Assets Design Engine and Visual Production Runtime**
 
-From brand input to production-ready visual assets — powered by agents, image models, and human judgment.
-
-AndyAI Visual Factory is a structured visual production system that transforms brand books, logos, color palettes, prompt libraries, and creative briefs into production-ready outputs such as:
-
-- social media graphics
-- hero visuals
-- infographics
-- pricing cards
-- pitch deck graphics
-- merch mockups
-- UI mockups
-- image-to-video first frames
+AndyAI Visual Factory turns brand context, human intent, and model generation into registered, reusable, export-ready visual assets.
 
 ---
 
@@ -22,11 +11,15 @@ AndyAI Visual Factory is a structured visual production system that transforms b
 ```text
 Brand Input
 → Agent Planning
+→ Visual Job
+→ Prompt Compiler
+→ Visual Brief
 → Variation Grid
 → Human Selection
-→ Final Regeneration
+→ Asset Registry
 → Export Pack
-→ Memory Save
+→ Visual Memory
+→ Showcase
 ```
 
 ---
@@ -40,14 +33,6 @@ Visual Factory v1.2 = workspace runtime model
 Visual Factory v2.0 = SaaS-ready visual production runtime
 ```
 
-The v1.2.0 release introduces the workspace layer:
-
-```text
-Brand Pack + Project Workspace
-```
-
-A workspace gives every brand/project its own production room.
-
 ---
 
 ## Relationship to AndyAI Visual Canon
@@ -59,9 +44,6 @@ andyai-visual-canon
         ↓
 andyai-visual-factory
 ```
-
-- **AndyAI Visual Canon** = rules, style, standards, visual doctrine
-- **AndyAI Visual Factory** = execution, generation, asset production
 
 Canonical formula:
 
@@ -75,11 +57,9 @@ Factory evolves.
 
 ---
 
-## Runtime Version Ladder
+## Full Runtime Ladder
 
 ```text
-v1.1.0 — Visual Job Model + Production Request Schema
-v1.2.0 — Brand Pack Runtime + Project Workspace Model
 v1.3.0 — Prompt Compiler + Visual Brief Generator
 v1.4.0 — Variation Grid Runtime + Human Selection Ledger
 v1.5.0 — Asset Registry + Export Pack Builder
@@ -92,12 +72,18 @@ v2.0.0 — Visual Factory Runtime Engine
 
 ---
 
+## v2.0 Definition
+
+```text
+AndyAI Visual Factory v2.0 is a SaaS-ready visual production runtime for turning brand context, human intent, and model generation into registered, reusable, export-ready visual assets.
+```
+
+---
+
 ## Master Lines
 
 ```text
 Build visuals like a system, not like a lottery.
-A job without a workspace is loose work.
-A job inside a workspace becomes production.
 From visual canon to visual runtime.
 From prompt to production.
 From image to asset.
@@ -110,8 +96,8 @@ From repo to SaaS.
 ## Status
 
 ```text
-Release: v1.2.0
-Status: Brand Pack Runtime + Project Workspace Model
+Release: v2.0.0
+Status: Visual Factory Runtime Engine
 Subdomain: https://visualfactory.andyai.ai
 Upstream Canon: andyai-visual-canon
 ```

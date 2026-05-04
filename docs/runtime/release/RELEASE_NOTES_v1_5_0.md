@@ -3,8 +3,10 @@
 ## Release name
 Asset Registry + Export Pack Builder
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Asset Registry
+- Export Pack Builder
+- Asset Naming Standard
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Generated outputs become registered, reusable production assets.

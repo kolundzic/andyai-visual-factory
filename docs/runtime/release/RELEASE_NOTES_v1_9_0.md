@@ -3,8 +3,11 @@
 ## Release name
 SaaS Product Layer + User/Team Workflow
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- SaaS Product Model
+- User Workflow
+- Team Workflow
+- Pricing Model Draft
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Visual Factory becomes product-ready.

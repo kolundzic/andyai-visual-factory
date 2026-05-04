@@ -3,8 +3,10 @@
 ## Release name
 Variation Grid Runtime + Human Selection Ledger
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Variation Grid Runtime
+- Human Selection Ledger
+- Variant Scorecard
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Human selection becomes structured, scored, and auditable.

@@ -3,8 +3,11 @@
 ## Release name
 Provider Adapter Runtime + Cost/Risk Controls
 
-## Status
-Planned in runtime roadmap ladder.
+## Added
+- Provider Runtime
+- Cost Control
+- Risk Control
+- Fallback Policy
 
-## Purpose
-See docs/runtime/roadmap/RUNTIME_ROADMAP_v1_2_TO_v2_0.md
+## Outcome
+Model usage becomes controlled by capability, price, and risk.

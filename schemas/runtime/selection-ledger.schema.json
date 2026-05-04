@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Selection Ledger",
+  "type": "object",
+  "required": ["ledger_id", "job_id", "selected_variant", "selection_reason"],
+  "properties": {
+    "ledger_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "selected_variant": { "type": "integer" },
+    "selection_reason": { "type": "string" },
+    "scores": { "type": "object" }
+  }
+}
