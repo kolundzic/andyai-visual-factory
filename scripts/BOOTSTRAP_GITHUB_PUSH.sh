@@ -5,9 +5,9 @@ REPO_OWNER="kolundzic"
 REPO_NAME="andyai-visual-factory"
 REPO="${REPO_OWNER}/${REPO_NAME}"
 REPO_DIR="${HOME}/Documents/Projects/${REPO_NAME}"
-FINAL_TAG="v4.0.0"
-COMMIT_MSG="SUPABASE MASTER-UDARAC v3.1.0 to v4.0.0 - Visual Factory Supabase Runtime Foundation"
-TAGS=("v3.1.0" "v3.2.0" "v3.3.0" "v3.4.0" "v3.5.0" "v3.6.0" "v3.7.0" "v3.8.0" "v3.9.0" "v4.0.0")
+FINAL_TAG="v5.0.0"
+COMMIT_MSG="LIVE DATA MASTER-UDARAC v4.1.0 to v5.0.0 - Visual Factory Live Data Cloud MVP"
+TAGS=("v4.1.0" "v4.2.0" "v4.3.0" "v4.4.0" "v4.5.0" "v4.6.0" "v4.7.0" "v4.8.0" "v4.9.0" "v5.0.0")
 
 echo "🔵 AndyAI Visual Factory — TAP 02 bootstrap/push"
 cd "${REPO_DIR}"
@@ -22,13 +22,13 @@ git add .
 if git diff --cached --quiet; then echo "🟡 No staged changes."; else git commit -m "${COMMIT_MSG}"; fi
 
 for tag in "${TAGS[@]}"; do
-  if git rev-parse "${tag}" >/dev/null 2>&1; then echo "🟡 Tag exists: ${tag}"; else git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Supabase Milestone"; fi
+  if git rev-parse "${tag}" >/dev/null 2>&1; then echo "🟡 Tag exists: ${tag}"; else git tag -a "${tag}" -m "${tag} - AndyAI Visual Factory Live Data Milestone"; fi
 done
 
 if gh repo view "${REPO}" >/dev/null 2>&1; then
   echo "🟡 GitHub repo already exists: ${REPO}"
 else
-  gh repo create "${REPO}" --public --description "Agentic brand-to-assets pipeline for generating marketing visuals, UI mockups, infographics, merch, and design variations with human-guided selection." --homepage "https://visualfactory.andyai.ai"
+  gh repo create "${REPO}" --public --description "Agentic brand-to-assets visual production runtime." --homepage "https://visualfactory.andyai.ai"
 fi
 
 REMOTE_URL="https://github.com/${REPO}.git"
