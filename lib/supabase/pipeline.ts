@@ -35,6 +35,7 @@ export async function createVisualJobFromRequest(input: {
       workspace_id: input.workspaceId,
       production_request_id: input.productionRequestId,
       title: `Pipeline job for ${input.outputType}`,
+      output_type: input.outputType,
       status: "queued",
       stage: "brief_ready",
       provider_target: "openai_image",
